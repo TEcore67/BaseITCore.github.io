@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Analytics view for the GPO Dashboard demo with mock data.">
+  <meta property="og:title" content="Analytics | GPO Dashboard Demo">
+  <meta property="og:description" content="Mock governance KPIs and charts for platform and security teams.">
+  <title>Analytics | GPO Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">G</div>
+          <span>GPO Dashboard</span>
+        </div>
+        <div class="nav-links">
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" data-nav-section="docs" href="../docs/index.html">Docs</a>
+          <a class="nav-link" data-nav-section="dashboard" href="../dashboard/index.html">Dashboard Demo</a>
+          <a class="nav-link" href="../plans.html">Pricing</a>
+          <a class="nav-link" href="../use-cases.html">Use Cases</a>
+          <a class="nav-link" href="../customers.html">Customers</a>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌗</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <p class="badge">Dashboard demo</p>
+          <h1>Analytics</h1>
+          <p>Static KPIs and chart placeholders communicating compliance posture.</p>
+        </div>
+        <a class="button ghost" href="settings.html">Settings</a>
+      </div>
+
+      <div class="dashboard-grid" data-analytics></div>
+
+      <div class="card">
+        <h3>Charts</h3>
+        <div class="chart-placeholder" role="img" aria-label="Analytics placeholder">Trends placeholder</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">G</div>
+          <span>GPO Dashboard</span>
+        </div>
+        <p>Analytics are mock values until telemetry is connected.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/mock-data.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
