@@ -9,7 +9,7 @@
   <title>Pricing & Plans | GPO Dashboard</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+  <body data-billing-api-base="/api" data-user-id="">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <div class="container">
@@ -37,7 +37,7 @@
         <div>
           <p class="badge">Pricing & Checkout</p>
           <h1>Transparent plans built for governance operations.</h1>
-          <p>Hosted Lemon Squeezy checkout links open in a new tab. Replace URLs after Drive review.</p>
+          <p>Checkout buttons call the billing API to generate a Lemon Squeezy session.</p>
         </div>
         <a class="button ghost" href="customers.html">Read customer examples</a>
       </div>
@@ -86,7 +86,7 @@
           <div class="logo" aria-hidden="true">G</div>
           <span>GPO Dashboard</span>
         </div>
-        <p>Pricing URLs are placeholders until Drive assets are available.</p>
+        <p>Checkout sessions are generated via the billing API.</p>
       </div>
       <div>
         <h4>Navigate</h4>

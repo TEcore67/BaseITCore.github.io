@@ -1,9 +1,5 @@
-// Lemon Squeezy checkout links (placeholders pending Drive content review)
-const CHECKOUT_URLS = {
-  free: "https://yourstore.lemonsqueezy.com/checkout/buy/free-placeholder",
-  pro: "https://yourstore.lemonsqueezy.com/checkout/buy/pro-placeholder",
-  enterprise: "https://yourstore.lemonsqueezy.com/checkout/buy/enterprise-placeholder"
-};
+const CHECKOUT_ERROR_MESSAGE =
+  "We couldn't start checkout. Please contact support if this persists.";
 
 function setTheme(theme) {
   const body = document.body;
@@ -70,14 +66,44 @@ function initDocsSearch() {
 function initCheckoutButtons() {
   const buttons = document.querySelectorAll("[data-checkout-plan]");
   if (!buttons.length) return;
+  const apiBase = document.body.dataset.billingApiBase || "";
+  const userId = document.body.dataset.userId;
   buttons.forEach((button) => {
-    const plan = button.getAttribute("data-checkout-plan");
-    const url = CHECKOUT_URLS[plan];
-    if (url) {
-      button.setAttribute("href", url);
-      button.setAttribute("target", "_blank");
-      button.setAttribute("rel", "noreferrer noopener");
-    }
+    button.setAttribute("href", "#");
+    button.addEventListener("click", async (event) => {
+      event.preventDefault();
+      if (!userId) {
+        console.warn("Missing data-user-id on <body> for checkout.");
+        window.alert(CHECKOUT_ERROR_MESSAGE);
+        return;
+      }
+
+      try {
+        const response = await fetch(`${apiBase}/billing/checkout`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ user_id: userId })
+        });
+
+        if (!response.ok) {
+          window.alert(CHECKOUT_ERROR_MESSAGE);
+          return;
+        }
+
+        const data = await response.json();
+        if (data.checkout_url) {
+          window.open(data.checkout_url, "_blank", "noopener,noreferrer");
+          return;
+        }
+
+        window.alert(CHECKOUT_ERROR_MESSAGE);
+      } catch (error) {
+        console.error("Checkout error:", error);
+        window.alert(CHECKOUT_ERROR_MESSAGE);
+      }
+    });
   });
 }
 
