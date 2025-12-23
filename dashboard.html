@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Demo | GPO Dashboard Management Core Solutions</title>
+  <meta name="description" content="Static dashboard demo for GPO Dashboard Management Core Solutions with KPIs, roles, activity, and settings." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar" role="navigation" aria-label="Primary">
+      <div class="brand" aria-label="GPO Dashboard Management Core Solutions brand">
+        <span aria-hidden="true"></span> GPO Dashboard Core
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-live="polite" aria-label="Toggle theme">
+        <span class="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="dashboard-title">
+      <div>
+        <p class="badge">Static Demo UI</p>
+        <h1 id="dashboard-title">Dashboard structure for GPO governance</h1>
+        <p>This page uses mock data to illustrate the layout and clarity of the GPO dashboard. No authentication, no backend calls.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="kpi-title">
+      <h2 id="kpi-title">Key performance indicators</h2>
+      <div id="kpi-grid" class="grid grid-3" role="list"></div>
+    </section>
+
+    <section class="section" aria-labelledby="users-title">
+      <h2 id="users-title">Users</h2>
+      <div class="table-wrapper">
+        <table aria-label="Users table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Status</th>
+              <th scope="col">Last seen</th>
+            </tr>
+          </thead>
+          <tbody id="user-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="roles-title">
+      <h2 id="roles-title">Roles &amp; permissions</h2>
+      <ul id="role-list" class="list"></ul>
+    </section>
+
+    <section class="section" aria-labelledby="activity-title">
+      <h2 id="activity-title">Activity (static chart)</h2>
+      <div class="chart" role="img" aria-label="Monthly activity bar chart">
+        <canvas id="activity-chart" width="640" height="320"></canvas>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="settings-title">
+      <h2 id="settings-title">Settings (read-only demo)</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <label for="setting-region">Primary region</label>
+          <input id="setting-region" type="text" disabled aria-disabled="true" />
+        </div>
+        <div class="card">
+          <label for="setting-sso">SSO enforcement</label>
+          <input id="setting-sso" type="text" disabled aria-disabled="true" />
+        </div>
+        <div class="card">
+          <label for="setting-retention">Audit retention</label>
+          <input id="setting-retention" type="text" disabled aria-disabled="true" />
+        </div>
+        <div class="card">
+          <label for="setting-approvals">Change approvals</label>
+          <input id="setting-approvals" type="text" disabled aria-disabled="true" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Static dashboard demo — all values are mocked for illustration.</p>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
