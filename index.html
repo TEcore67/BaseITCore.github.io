@@ -1,188 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GPO Dashboard Management Core Solutions centralizes policy governance, visibility, and audit-ready controls for enterprise teams.">
-  <meta property="og:title" content="GPO Dashboard Management Core Solutions">
-  <meta property="og:description" content="Enterprise-grade governance dashboard with docs, pricing, and static demo UI.">
-  <meta property="og:type" content="website">
-  <title>GPO Dashboard Management Core Solutions</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPO Dashboard Management Core Solutions | Governance, Policies, Operations</title>
+  <meta name="description" content="GPO Dashboard Management Core Solutions: governance-ready policies, secure oversight, and a clear dashboard demo for teams." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
   <header>
-    <div class="container">
-      <nav aria-label="Primary">
-        <div class="brand">
-          <div class="logo" aria-hidden="true">G</div>
-          <span>GPO Dashboard</span>
-        </div>
-        <div class="nav-links">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" data-nav-section="docs" href="docs/index.html">Docs</a>
-          <a class="nav-link" data-nav-section="dashboard" href="dashboard/index.html">Dashboard Demo</a>
-          <a class="nav-link" href="plans.html">Pricing</a>
-          <a class="nav-link" href="use-cases.html">Use Cases</a>
-          <a class="nav-link" href="customers.html">Customers</a>
-          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">🌗</button>
-        </div>
+    <div class="navbar" role="navigation" aria-label="Primary">
+      <div class="brand" aria-label="GPO Dashboard Management Core Solutions brand">
+        <span aria-hidden="true"></span> GPO Dashboard Core
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
       </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-live="polite" aria-label="Toggle theme">
+        <span class="theme-label">Dark mode</span>
+      </button>
     </div>
   </header>
 
-  <main id="main" class="container">
-    <section class="hero">
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
       <div>
-        <span class="badge">Enterprise policy governance</span>
-        <h1>Policy observability and least-privilege controls you can ship today.</h1>
-        <p>GPO Dashboard Management Core Solutions aligns governance, platform engineering, and security teams with one static, audit-ready command center. Placeholder text pending Drive content review.</p>
-        <div class="hero-cta">
-          <a class="button" href="docs/index.html">View Docs</a>
-          <a class="button secondary" href="dashboard/index.html">View Dashboard</a>
-          <a class="button ghost" href="plans.html">See Pricing</a>
+        <p class="badge" aria-label="Product category">Governance. Policy. Operations.</p>
+        <h1 id="hero-title">Confident governance with the GPO Dashboard Management Core</h1>
+        <p>Standardize policies, observe change history, and keep roles aligned across every workspace with a single, governance-ready control plane.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="docs.html">View Docs</a>
+          <a class="btn btn-secondary" href="dashboard.html">View Dashboard</a>
+          <a class="btn btn-ghost" href="pricing.html">View Pricing</a>
         </div>
       </div>
-      <div class="card">
-        <h3>Highlights</h3>
+      <div class="card" aria-label="Architecture overview">
+        <h3>How GPO fits in</h3>
+        <p class="highlighted-text">Identity in → Roles and Policies → Observability out.</p>
         <ul class="list">
-          <li>Automated policy drift detection across tenants.</li>
-          <li>Approval-ready evidence for auditors and regulators.</li>
-          <li>Role-based guardrails for platform and security teams.</li>
-          <li>Composable architecture ready for future backend integration.</li>
+          <li><strong>Connectors:</strong> Identity providers, HRIS, and app directories flow into the GPO core.</li>
+          <li><strong>Policy Engine:</strong> Declarative policies, approvals, and exceptions processed centrally.</li>
+          <li><strong>Observability:</strong> Change history, audits, and alerts exported to your SIEM.</li>
         </ul>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="problem-solution">
+    <section class="section" aria-labelledby="benefits-title">
       <div class="section-header">
-        <div>
-          <p class="badge">Problem → Solution</p>
-          <h2 id="problem-solution">Close the gap between policy design and execution.</h2>
-          <p>Legacy consoles lack observability, and bespoke scripts are brittle. GPO Dashboard makes compliance measurable with static, portable UX that is ready for backend APIs when available.</p>
-        </div>
+        <h2 id="benefits-title">Three outcomes teams rely on</h2>
+        <p class="highlighted-text">Built for security, IT, and governance leads.</p>
       </div>
-      <div class="grid cols-3">
+      <div class="grid grid-3">
         <div class="card">
-          <h3>Visibility</h3>
-          <p>Unify governance signals with mock analytics cards and export-ready evidence.</p>
+          <h3>Predictable policies</h3>
+          <p class="highlighted-text">Codify policy scope, ownership, and SLAs so reviews are consistent and auditable.</p>
         </div>
         <div class="card">
-          <h3>Control</h3>
-          <p>Model users, roles, and exceptions with predictable permission patterns.</p>
+          <h3>Role clarity</h3>
+          <p class="highlighted-text">Separate global admins, workspace owners, and auditors with permissions you can prove.</p>
         </div>
         <div class="card">
-          <h3>Readiness</h3>
-          <p>Static front-end keeps delivery simple while preserving future API contracts.</p>
+          <h3>Operational trust</h3>
+          <p class="highlighted-text">Track every change, receive exportable evidence, and keep security teams unblocked.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="features">
-      <div class="section-header">
-        <div>
-          <p class="badge">Feature highlights</p>
-          <h2 id="features">Built for governance, trusted by platform teams.</h2>
-          <p>Every element is optimized for compliance, auditability, and day-2 operations.</p>
-        </div>
-      </div>
-      <div class="grid cols-3">
+    <section class="section" aria-labelledby="use-cases-title">
+      <h2 id="use-cases-title">Use cases</h2>
+      <div class="grid grid-3">
         <div class="card">
-          <h3>Drift &amp; deviation signals</h3>
-          <p>Mock remediation timers, status chips, and evidence export show how operations land across regions.</p>
+          <h3>Access governance</h3>
+          <p class="highlighted-text">Use role boundaries and policy attestations to reduce over-provisioning.</p>
         </div>
         <div class="card">
-          <h3>Role-aware navigation</h3>
-          <p>Users, roles, analytics, and settings pages mirror the backend domains you can extend later.</p>
+          <h3>Policy lifecycle</h3>
+          <p class="highlighted-text">Publish new controls, collect approvals, and see downstream impact before rollout.</p>
         </div>
         <div class="card">
-          <h3>Docs-style system</h3>
-          <p>Left nav, search, and breadcrumbs align to API reference and getting-started guides.</p>
+          <h3>Audit readiness</h3>
+          <p class="highlighted-text">Generate evidence of who changed what, when, and why—no backtracking.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="architecture">
-      <div class="section-header">
-        <div>
-          <p class="badge">Architecture (static)</p>
-          <h2 id="architecture">Composable layers that anticipate backend APIs.</h2>
-          <p>Clean separation of assets, docs, and dashboard demo for GitHub Pages and future services.</p>
-        </div>
-        <a class="button ghost" href="docs/core-concepts.html">View architecture notes</a>
-      </div>
-      <div class="arch-diagram">
-        <div class="card">
-          <h3>Experience</h3>
-          <p>Responsive marketing + docs + dashboard UI using semantic HTML and shared CSS.</p>
-        </div>
-        <div class="card">
-          <h3>Integration ready</h3>
-          <p>Mock data isolates placeholders until Drive-sourced terminology and APIs are confirmed.</p>
-        </div>
-        <div class="card">
-          <h3>Deployability</h3>
-          <p>Zero build tools, relative paths, and sitemap for GitHub Pages.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="trust">
-      <div class="section-header">
-        <div>
-          <p class="badge">Trust indicators</p>
-          <h2 id="trust">Proof points for security, platform, and compliance leaders.</h2>
-        </div>
-        <a class="button" href="customers.html">See customers</a>
-      </div>
-      <div class="trust-logos" aria-label="Example customer logos (placeholders)">
-        <div class="trust-logo">Atlas Holdings</div>
-        <div class="trust-logo">Northwind Ops</div>
-        <div class="trust-logo">Sierra Systems</div>
-        <div class="trust-logo">Blue Harbor</div>
-        <div class="trust-logo">Aurora FinServ</div>
+    <section class="section" aria-labelledby="cta-title">
+      <h2 id="cta-title">Ready to see how GPO keeps teams aligned?</h2>
+      <p class="highlighted-text">Explore the static dashboard, review the docs, or pick a plan when you are ready.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="dashboard.html">Open Dashboard Demo</a>
+        <a class="btn btn-secondary" href="docs.html">Read Documentation</a>
+        <a class="btn btn-ghost" href="pricing.html">Compare Pricing</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand">
-          <div class="logo" aria-hidden="true">G</div>
-          <span>GPO Dashboard</span>
-        </div>
-        <p>Static-first experience. Replace placeholder terminology after Drive review.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul class="list">
-          <li><a href="index.html">Overview</a></li>
-          <li><a href="plans.html">Pricing</a></li>
-          <li><a href="use-cases.html">Use cases</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul class="list">
-          <li><a href="docs/index.html">Documentation</a></li>
-          <li><a href="dashboard/index.html">Dashboard demo</a></li>
-          <li><a href="customers.html">Customers</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Compliance</h4>
-        <ul class="list">
-          <li>Accessibility-ready</li>
-          <li>SEO optimized</li>
-          <li>Static deployment</li>
-        </ul>
-      </div>
-    </div>
+    <p>GPO Dashboard Management Core Solutions — Static site for GitHub Pages.</p>
   </footer>
 
-  <script src="assets/js/mock-data.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script type="module" src="assets/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentation | GPO Dashboard Management Core Solutions</title>
+  <meta name="description" content="Documentation for GPO Dashboard Management Core Solutions: concepts, roles, policies, governance, and dashboard behavior." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar" role="navigation" aria-label="Primary">
+      <div class="brand" aria-label="GPO Dashboard Management Core Solutions brand">
+        <span aria-hidden="true"></span> GPO Dashboard Core
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-live="polite" aria-label="Toggle theme">
+        <span class="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="docs-title">
+      <div>
+        <p class="badge">Product documentation</p>
+        <h1 id="docs-title">GPO Dashboard Management Core Solutions</h1>
+        <p>Frontend-only documentation describing the governance, policy, and operational model. All data in this static site is mocked for demonstration.</p>
+      </div>
+    </section>
+
+    <nav class="anchor-nav" aria-label="On this page">
+      <a href="#what-is-gpo">What is GPO</a>
+      <a href="#core-concepts">Core concepts</a>
+      <a href="#dashboard">How the dashboard works</a>
+      <a href="#security">Security &amp; compliance</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+
+    <section class="section" id="what-is-gpo" aria-labelledby="what-title">
+      <h2 id="what-title">What is GPO</h2>
+      <p class="highlighted-text">GPO (Governance, Policies, Operations) Dashboard Management Core Solutions provides a central, audit-friendly way to define policy owners, apply role-based controls, and observe change history across every workspace.</p>
+    </section>
+
+    <section class="section" id="core-concepts" aria-labelledby="concepts-title">
+      <h2 id="concepts-title">Core concepts</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Users</h3>
+          <p class="highlighted-text">People mapped from identity providers or invited directly. Users belong to workspaces and inherit policies via roles.</p>
+        </article>
+        <article class="card">
+          <h3>Roles</h3>
+          <p class="highlighted-text">Global Admins, Workspace Admins, Policy Owners, and Auditors define who can change, approve, or view policies.</p>
+        </article>
+        <article class="card">
+          <h3>Policies</h3>
+          <p class="highlighted-text">Declarative guardrails with metadata (owner, scope, SLA, evidence). Policies include change history and exceptions.</p>
+        </article>
+        <article class="card">
+          <h3>Governance</h3>
+          <p class="highlighted-text">Approval workflows, segregation of duties, and exportable audits keep changes traceable and reviewable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="dashboard" aria-labelledby="dashboard-title">
+      <h2 id="dashboard-title">How the dashboard works</h2>
+      <ul class="list">
+        <li><strong>Overview:</strong> KPI cards summarizing coverage, SLAs, and alerts.</li>
+        <li><strong>Directory:</strong> Users and roles synchronized from identity providers with status visibility.</li>
+        <li><strong>Policy views:</strong> Ownership, approval steps, and exceptions shown side by side.</li>
+        <li><strong>Activity:</strong> A visual change log of approvals, alerts, and exports.</li>
+        <li><strong>Settings:</strong> Region selection, SSO state, audit retention, and change approvals. Inputs are disabled in the static demo.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="security" aria-labelledby="security-title">
+      <h2 id="security-title">Security &amp; compliance (UI-level)</h2>
+      <ul class="list">
+        <li><strong>Role boundaries:</strong> Admin actions are separated from auditor views in the UI layout.</li>
+        <li><strong>Evidence trails:</strong> Activity charts and change tables keep an immutable view for compliance teams.</li>
+        <li><strong>Session clarity:</strong> Theme, navigation, and status labels are keyboard accessible for quick reviews.</li>
+        <li><strong>No backend promises:</strong> This static site does not connect to any service; data shown is mock-only.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+      <h2 id="roadmap-title">Roadmap</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Short term</h3>
+          <p class="highlighted-text">Template policies for common frameworks and richer status labels in the dashboard demo.</p>
+        </div>
+        <div class="card">
+          <h3>Mid term</h3>
+          <p class="highlighted-text">Cross-tenant views and scheduled export simulations for governance teams.</p>
+        </div>
+        <div class="card">
+          <h3>Long term</h3>
+          <p class="highlighted-text">Marketplace of integrations and extensible approval steps configured from the UI.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Documentation for GPO Dashboard Management Core Solutions. Static content only.</p>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
