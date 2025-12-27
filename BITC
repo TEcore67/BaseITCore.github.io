@@ -1,0 +1,48 @@
+{
+  "project": "Baseitcore",
+  "intro": {
+    "title": "Global GPO Search",
+    "subtitle": "Search across all GPO settings, registry keys, and configurations",
+    "description": "An advanced dashboard for querying, visualizing, and analyzing GPO data across your organization."
+  },
+  "features": [
+    "Powerful search engine for GPOs",
+    "Filter by user, computer, settings, preferences, security",
+    "Real-time error display (e.g. 404 feedback)",
+    "User-friendly UI with left sidebar and dynamic search results"
+  ],
+  "demo": {
+    "media_type": "image",
+    "src": "path/to/screenshot.png",
+    "description": "Search query with scope and result example"
+  },
+  "style": {
+    "theme": "dark",
+    "accentColor": "#00FFE2",
+    "font": "Inter",
+    "layout": "sidebar-left + main-panel"
+  },
+  "version": "2.0",
+  "license": "MIT"
+}
+# BaseITcore
+
+## Global GPO Search
+Search across all GPO settings, registry keys, and configurations.
+
+An advanced dashboard for querying, visualizing, and analyzing GPO data across your organization.
+
+## Features
+- Powerful search engine for GPOs
+- Filter by user, computer, settings, preferences, security
+- Real-time error display (e.g. 404 feedback)
+- User-friendly UI with left sidebar and dynamic search results
+
+## Style
+- Theme: Dark
+- Accent color: #00FFE2
+- Font: Inter
+- Layout: Sidebar-left + Main panel
+
+## License
+MIT
