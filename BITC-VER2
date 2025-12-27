@@ -1,0 +1,83 @@
+
+{
+  "search": {
+    "query": "back",
+    "scope": "All",
+    "searchIn": ["All", "Settings", "Preferences", "Security"],
+    "error": {
+      "code": 404,
+      "message": "Not Found"
+    }
+  }
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+}
+.sidebar {
+    width: 240px;
+    background-color: #111827;
+    padding: 20px;
+}
+.sidebar h1 {
+    color: #00ffe2;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.sidebar ul li.active, .sidebar ul li:hover {
+    background-color: #00ffe2;
+    color: #000;
+}
+.main {
+    flex-grow: 1;
+    padding: 20px;
+}
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #00ffe2;
+    color: black;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+.tags {
+    margin: 15px 0;
+}
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #1f2937;
+    border-radius: 20px;
+}
+.tag.active {
+    background-color: #00ffcc;
+    color: black;
+}
+.error-box {
+    margin-top: 20px;
+    background-color: #7f1d1d;
+    color: #fecaca;
+    padding: 10px;
+    border-radius: 5px;
+}
